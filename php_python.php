@@ -2,12 +2,12 @@
 print 'hello world em php 1';
 ?>
 
-<?phpython
+<?python
 print('hello world em python 1')
-phpython?><?php
+python?><?php
 print 'hello world em php 2';
 ?>
 
-<?phpython
+<?python
 print('hello world em python 2')
-phpython?>
+python?>
