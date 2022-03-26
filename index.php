@@ -25,8 +25,8 @@ function phpython($filename){
 		$codigo_misto,
 		$codigos_python
 	);
-	//executar códigos python e salvar o output
 	if(count($codigos_python[1])>=1){
+		//executar códigos python e salvar o output
 		foreach($codigos_python[1] as $key=>$code){
 			$out=run_python($code);
 			$codigos_python[3][$key]=$out;
