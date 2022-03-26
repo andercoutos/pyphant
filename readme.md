@@ -1,6 +1,11 @@
 # phpython
+<p align="center">
+  <img src="https://i.imgur.com/aGtInrl.jpg" width="400">                                                                                       
+</p>
 
-Rodando códigos PHP e Python em um mesmo arquivo
+<p align="center">
+  <i>Rodando códigos PHP e Python em um mesmo arquivo</i>
+</p>
 
 ## Execução
 
