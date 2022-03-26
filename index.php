@@ -21,7 +21,7 @@ function run_php($code){
 function phpython($filename){
 	$codigo_misto=file_get_contents('php_python.php');
 	preg_match_all(
-		'/(?:<\?python((?:.*?\r?\n?)*)python\?>)+/',
+		'/(?:<\?python((?:.*?\r?\n?)*)\?>)+/',
 		$codigo_misto,
 		$codigos_python
 	);
