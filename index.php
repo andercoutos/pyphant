@@ -16,6 +16,7 @@ function run_php($code){
 	passthru("php -f ".$filename);
 	$out=ob_get_contents();
 	ob_end_clean();
+	unlink($filename);	
 	return $out;
 }
 function phpython($filename){
