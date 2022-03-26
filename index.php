@@ -1,6 +1,6 @@
 <?php
 function run_python($code){
-	$filename=tempnam("/tmp","phpython");
+	$filename=tempnam("/tmp","python");
 	file_put_contents($filename,$code);
 	ob_start();
 	passthru("python ".$filename);
@@ -10,7 +10,7 @@ function run_python($code){
 	return $out;
 }
 function run_php($code){
-	$filename=tempnam("/tmp","phpython");
+	$filename=tempnam("/tmp","php");
 	file_put_contents($filename,$code);
 	ob_start();
 	passthru("php -f ".$filename);
@@ -21,7 +21,7 @@ function run_php($code){
 function phpython($filename){
 	$codigo_misto=file_get_contents('php_python.php');
 	$url = preg_match_all(
-		'/(?:<\?phpython((?:.*?\r?\n?)*)phpython\?>)+/',
+		'/(?:<\?python((?:.*?\r?\n?)*)python\?>)+/',
 		$codigo_misto,
 		$codigos_python
 	);
