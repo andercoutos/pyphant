@@ -20,7 +20,7 @@ function run_php($code){
 }
 function phpython($filename){
 	$codigo_misto=file_get_contents('php_python.php');
-	$url = preg_match_all(
+	preg_match_all(
 		'/(?:<\?python((?:.*?\r?\n?)*)python\?>)+/',
 		$codigo_misto,
 		$codigos_python
