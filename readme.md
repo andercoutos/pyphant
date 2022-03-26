@@ -10,7 +10,7 @@ Execute o seguinte comando:
 php -f index.php
 ```
 
-Saida experada:
+Saida esperada:
 
 ```
 hello world em php 1
