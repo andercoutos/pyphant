@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <i>Rodando códigos PHP e Python em um mesmo arquivo</i>
+  <i>Códigos PHP e Python rodando em um mesmo arquivo</i>
 </p>
 
 ## Execução
