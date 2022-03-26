@@ -28,8 +28,7 @@ function phpython($filename){
 	if(count($codigos_python[1])>=1){
 		//executar códigos python e salvar o output
 		foreach($codigos_python[1] as $key=>$code){
-			$out=run_python($code);
-			$codigos_python[3][$key]=$out;
+			$codigos_python[3][$key]=run_python($code);
 		}
 		//substituir o código python pelo output
 		$codigo_php=null;
